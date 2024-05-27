@@ -49,4 +49,4 @@ if __name__ == "__main__":
     value, items = bf.solve()
 
     print("Max value:", value)
-    print("Used items:", *r)
+    print("Used items:", *items)

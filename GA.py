@@ -26,7 +26,7 @@ class GreedyAlgorithm:
         used_items = []
 
         for i in range(self.n):
-            if self.c - sort_items[i][0] >= 0:
+            if self.c >= sort_items[i][0]:
                 self.c -= sort_items[i][0]
                 max_value += sort_items[i][1]
                 used_items.append(self.items.index(sort_items[i]) + 1)
