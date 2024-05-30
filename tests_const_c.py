@@ -62,7 +62,7 @@ plt.errorbar(ns, list(map(np.average, map(np.log, times_dp))), yerr=list(map(np.
              label='Dynamic Programming', fmt='none', ecolor='black', capsize=1)
 plt.plot(ns, list(map(np.average, map(np.log, times_ga))), label='Greedy Algorithm')
 plt.errorbar(ns, list(map(np.average, map(np.log, times_ga))), yerr=list(map(np.std, map(np.log, times_bf))),
-             label='Brute Force', fmt='none', ecolor='black', capsize=1)
+             label='Greedy Algorithm', fmt='none', ecolor='black', capsize=1)
 
 plt.title('Comparison of knapsack algorithms')
 plt.xlabel('Number of items (n)')

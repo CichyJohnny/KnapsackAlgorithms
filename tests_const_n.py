@@ -79,7 +79,7 @@ plt.show()
 plt.figure(figsize=(10, 6))
 plt.plot(cs, list(map(np.average, times_ga)), label='Greedy Algorithm')
 plt.errorbar(cs, list(map(np.average, times_ga)), yerr=list(map(np.std, times_bf)),
-             label='Brute Force', fmt='none', ecolor='black', capsize=1)
+             label='Greedy Algorithm', fmt='none', ecolor='black', capsize=1)
 
 plt.title('Greedy Algorithm with constant number of items')
 plt.xlabel('Knapsack capacity (c)')

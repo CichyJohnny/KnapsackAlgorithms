@@ -102,7 +102,7 @@ fig = plt.figure(figsize=(10, 6))
 ax = fig.add_subplot(projection='3d')
 ax.plot_surface(cs_mesh, ns_mesh, average_times_ga, label='Greedy Algorithm', cmap='viridis')
 ax.errorbar(cs_mesh.flatten(), ns_mesh.flatten(), average_times_ga.flatten(), yerr=std_times_ga.flatten(),
-            fmt='|', color='black', capsize=3, label='Brute Force')
+            fmt='|', color='black', capsize=3, label='Greedy Algorithm')
 
 ax.set_title('Knapsack Greedy algorithm')
 ax.set_xlabel('Knapsack capacity (c)')
